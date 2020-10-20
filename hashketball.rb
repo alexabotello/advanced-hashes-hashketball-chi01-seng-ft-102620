@@ -128,13 +128,13 @@ end
 
 # Write code here
 
-def num_points_scored(team_player)
-  result = {}
-  game_hash.each do |team_player|
-    if game_hash[:player_name]
-      return game_hash[:points]
+def num_points_scored(player_name)
+  game_hash.each do |location, team_data|
+    team_data.each do |attribute, data|
+      data.each do |data_item|
+      end
     end
-  end 
+  end
 end
 
 def shoe_size
